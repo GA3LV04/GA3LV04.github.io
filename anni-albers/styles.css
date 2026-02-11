@@ -29,6 +29,7 @@ p.callout {
     font-style: italic;
 }
 
-#row1 p {
+#row1 p,
+#row3 p {
     margin-left: calc(100% * 1 / 6);
 }
