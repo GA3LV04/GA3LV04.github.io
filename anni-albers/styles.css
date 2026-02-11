@@ -42,3 +42,40 @@ p.callout {
 #row5 {
 margin-left: calc(100% * 2 / 6);
 }
+
+/* ****************************************************** */
+/* CSS for index 2                                        */
+/* ****************************************************** */
+
+/* inherit on the baseline main code, above */
+#secondlayout main {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+        'title title title title title title'
+        '. p1 p1 . . .'
+        'p2 p2 . . c1 c1'
+        '. p3 p3 . . .'
+        '. . p4 p4 . .'
+        '. . . . .'
+        '. . . . .'
+        '. . . . .'
+        '. . . . .'
+         '. . . . .'
+        '. . . . .';
+}
+
+#secondlayout #titlerow { grid-area: title; }
+#secondlayout #para1 { grid-area: p1; }
+#secondlayout #para1 { grid-area: p2; }
+#secondlayout #para1 { grid-area: p3; }
+#secondlayout #para1 { grid-area: p4; }
+#secondlayout #para1 { grid-area: p5; }
+#secondlayout #para1 { grid-area: p6; }
+#secondlayout #para1 { grid-area: p7; }
+#secondlayout #para1 { grid-area: p8; }
+#secondlayout #para1 { grid-area: p9; }
+#secondlayout #para1 { grid-area: p10; }
+#secondlayout #para1 { grid-area: p11; }
+#secondlayout #callout1 { grid-area: c1; }
