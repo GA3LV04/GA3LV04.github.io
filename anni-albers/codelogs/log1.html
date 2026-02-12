@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<!-- meta tags and title -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Measuring Units</title>
+
+	<!-- external and internal CSS -->
+	<link rel="stylesheet" href="styles.css" media="all">
+	<style>
+		
+        textarea {
+            border:none;
+            padding: 5px;
+            background-color: lightgray
+        }
+            
+	</style>
+
+</head>
+<body>
+
+	<h1>Code Log 2: CSS Measuring</h1>
+
+<p>In CSS, length units define distances for properties like width, margin, padding, and font-size. These units fall into absolute and relative categories, each with distinct behavior.
+
+Absolute lengths are fixed values that remain constant regardless of screen size or parent element dimensions. They are ideal for print or when the output medium is known, but less flexible for responsive design.</p>
+
+<p>Example:</p>
+
+    <textarea cols="50" rows="3">
+box {
+width: 300px; /* Fixed width */
+border: 2px solid black;
+}
+    </textarea>
+    
+    <hr>
+
+<p> For instance this .box will always try to maintain 300px width regardless of viewport changes.
+
+Relative lengths adapt based on another measurement, making them more suitable for responsive layouts. They scale with font size, parent dimensions, or viewport size.</p>
+
+<p>Example:</p>
+
+    <textarea cols="50" rows="3">
+container {
+width: 60%; /* 60% of parent width */
+}
+text {
+font-size: 2em; /* Twice the parent font size */
+}
+    </textarea>
+
+<p>If the parent changes size, .container adjusts automatically. Similarly, em and rem scale with font settings.</p>
+
+    <hr>
+
+    <h2>Small Groups of CSS Units Explained:</h2>
+
+
+<ul>
+px: A unit of measurement for pixels, commonly used in web design and graphic design to express the size of text, images, and other elements on a webpage.
+
+pt: A unit of measurement for points, also used in web design to express the size of text and images, where 1 pt equals 1/72 of an inch.
+
+em: A unit of measurement for em-pixels, which is equal to 16 pixels. It is commonly used in web design to express the size of text and images, providing a consistent size across different screen resolutions.
+These units are essential for ensuring that web design elements are displayed correctly across various devices and screen sizes.
+
+: Represents footer content, such as copyright or contact information.
+</ul>
+
+</body>
+</html>
