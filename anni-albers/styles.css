@@ -39,7 +39,13 @@ p.callout {
 }
 
 #row15 p,
-#row5 {
+#row5
+#row7
+#row9
+#row11
+#row13
+#row14
+#row16 {
 margin-left: calc(100% * 2 / 6);
 }
 
@@ -58,7 +64,7 @@ margin-left: calc(100% * 2 / 6);
         'p2 p2 . . c1 c1'
         '. p3 p3 . . .'
         '. . p4 p4 . .'
-        '. . . . .'
+        '. p5 p5. .'
         '. . . . .'
         '. . . . .'
         '. . . . .'
