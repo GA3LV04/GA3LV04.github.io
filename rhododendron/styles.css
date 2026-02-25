@@ -1,0 +1,35 @@
+/* mobile-first design for Pacific Rhododenron layout*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+}
+
+#rhodiePicture {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(Pacific\ Rhododendron\ 1\ -\ Walter\ Siegmund.jpeg);
+    background-size: cover;
+    }
+
+    #rhodieTitle{
+        position: absolute;
+    width: 100vw;
+    height: 100vh;
+    }
+
+    #rhodiTitle h1{
+        position: absolutr;
+        bottom: 0;
+        left: 0;
+    }
