@@ -65,7 +65,8 @@ header {
 
 #row1 p,
 #row2 p,
-#row3 p {
+#row3 p,
+#row4 p {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.3rem;
     max-width: 800px;
@@ -80,4 +81,22 @@ main section + section::before {
     margin-bottom: 2rem;
     color: #7a9a7b;
     font-size: 1.2rem;
+}
+
+@media screen and (min-width: 900px) {
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        max-width: 1200px;
+        margin: 4rem auto;
+    }
+
+    main section {
+        background-color: #f0f6f0;
+        padding: 3rem;
+        border-radius: 20px;
+    }
+
 }
