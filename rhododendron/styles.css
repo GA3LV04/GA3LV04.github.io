@@ -2,7 +2,7 @@
 
 *{
     box-sizing: border-box;
-    font-family: arial, sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 body{
@@ -53,6 +53,7 @@ header {
 
         #rhodieTitle h1 {
             width: 45vw;
+            font-family: 'Playfair Display', serif;
         }
 
     }
@@ -63,6 +64,8 @@ header {
 
 #row1 p,
 #row2 p {
+    background-color: #f0f6f0;  /* soft sage green */
+    padding: 4rem 0;
     max-width: 800px;
     margin: 0 auto 1.5rem auto;
     line-height: 1.7;
