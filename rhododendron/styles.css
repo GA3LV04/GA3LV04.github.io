@@ -56,3 +56,10 @@ header {
         }
 
     }
+
+    #row1 p,
+    #row2 p {
+    box-sizing: border-box;
+    font-family: arial, sans-serif;
+    margin-left: calc(100% * 1 / 6);
+}
