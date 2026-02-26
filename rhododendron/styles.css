@@ -7,7 +7,7 @@
 body{
     padding: 0;
     margin: 0;
-    background-color: #f0f6f0;  
+    background-color: white;  
 }
 
 header {
@@ -48,7 +48,7 @@ header {
         #rhodieTitle {
             width: 50vw;
             left: 50vw;
-            background-color: #f0f6f0;
+            background-color: white
         }
 
         #rhodieTitle h1 {
