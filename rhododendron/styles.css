@@ -65,9 +65,9 @@ header {
 
 #row1 p,
 #row2 p {
-    padding: 4rem 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
     max-width: 800px;
     margin: 0 auto 1.5rem auto;
-    line-height: 1.7;
-    font-size: 1.1rem;
+    line-height: 1.8;
 }
