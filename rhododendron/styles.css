@@ -1,4 +1,4 @@
-/* mobile-first design for Pacific Rhododenron layout*/
+
 
 *{
     box-sizing: border-box;
@@ -57,9 +57,13 @@ header {
 
     }
 
-    #row1 p,
-    #row2 p {
-    box-sizing: border-box;
-    font-family: arial, sans-serif;
-    margin-left: calc(100% * 1 / 6);
+    section {
+    padding: 4rem 0;
+}
+
+#row1 p,
+#row2 p {
+    max-width: 800px;
+    margin: 0 auto 1.5rem auto;
+    line-height: 1.7;
 }
