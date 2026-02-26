@@ -47,7 +47,7 @@ header {
 
         #rhodieTitle {
             width: 50vw;
-            margin-right: 50vw;
+            left: 50vw;
             background-color: plum;
         }
 
