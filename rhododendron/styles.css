@@ -49,7 +49,7 @@ header {
         #rhodieTitle {
             width: 50vw;
             left: 50vw;
-            background-color: plum;
+            background-color: #f0f6f0;
         }
 
         #rhodieTitle h1 {
@@ -65,7 +65,6 @@ header {
 
 #row1 p,
 #row2 p {
-    background-color: #f0f6f0;  /* soft sage green */
     padding: 4rem 0;
     max-width: 800px;
     margin: 0 auto 1.5rem auto;
