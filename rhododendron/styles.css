@@ -8,6 +8,7 @@
 body{
     padding: 0;
     margin: 0;
+    background-color: #f0f6f0;  /* sage green */
 }
 
 header {
@@ -69,4 +70,5 @@ header {
     max-width: 800px;
     margin: 0 auto 1.5rem auto;
     line-height: 1.7;
+    font-size: 1.1rem;
 }
