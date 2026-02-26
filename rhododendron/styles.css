@@ -65,7 +65,7 @@ header {
 
 #row1 p,
 #row2 p,
-#row3 {
+#row3 p {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.3rem;
     max-width: 800px;
