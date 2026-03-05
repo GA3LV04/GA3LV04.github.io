@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<!-- meta tags and title -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Color</title>
+
+	<!-- external and internal CSS -->
+	<link rel="stylesheet" href="styles.css" media="all">
+	<style>
+		
+        textarea {
+            border:none;
+            padding: 5px;
+            background-color: lightgray
+        }
+            
+	</style>
+
+</head>
+<body>
+
+	<h1>How CSS Uses Color</h1>
+
+<p>CSS uses color to control the appearance of text, backgrounds, borders, and other visual elements on a webpage. By applying different color values to specific properties, designers can create contrast, hierarchy, branding, and visual interest.</p>
+
+<h1>What do these CSS properties do?</h1>
+
+<p>The color property changes the text color of an element.</p>
+
+<p>Example of this:</p>
+
+<textarea cols="50" rows="3"
+div>
+p {
+  color: blue;
+}
+</textarea>
+
+<p>This makes the paragraph text blue.</p>
+
+    <hr>
+
+    <h1>background-color</h1>
+
+<p>The background-color property changes the background color behind an element.</p>
+
+    <hr>
+
+    <h1>border color </h1>
+
+ <p>The border-color property changes the color of an element’s border.</p>
+
+<textarea cols="50" rows="3"
+div>
+button {
+  border: 2px solid;
+  border-color: red;
+}
+</textarea>
+
+<p>This makes the button’s border red.</p>
+
+    <hr>
+
+    <h1>How does CSS accept color as a value?</h1>
+
+<p>CSS allows colors to be written in several different formats.</p>
+
+    <hr>
+
+<h1>Named Colors</h1>
+
+<p>These are predefined color names built into CSS.</p>
+
+<P>An example of this: red, blue, green, white, etc.</P>
+
+<textarea cols="50" rows="3"
+div>
+h1 {
+  color: purple;
+}
+
+section {
+  background-color: gold;
+}
+
+</textarea>
+
+    <hr>
+
+<h1>Hexadecimal (Hex) Colors</h1>
+
+<textarea>
+    p {
+  color: #ff0000;   /* red */
+}
+
+div {
+  background-color: #00ff00;  /* green */
+}
+</textarea>
+
+<p>Hex colors start with # and use six characters (numbers 0–9 and letters A–F).</p>
+
+<p> Format:
+
+#RRGGBB
+
+RR = Red value
+
+GG = Green value
+
+BB = Blue value</p>
+
+    <hr>
+
+<h1>RGB Colors</h1>
+
+<p>RGB stands for Red, Green, Blue. Each value goes from 0 to 255.</p>
+
+<textarea>
+    h2 {
+  color: rgb(255, 0, 0);   /* red */
+}
+
+body {
+  background-color: rgb(0, 0, 255);  /* blue */
+}
+</textarea>
+
+<p>Format:
+
+rgb(red, green, blue)</p>
+
+    <hr>
+
+<h1>Other Formats</h1>
+
+<p>RGBA (RGB with Alpha / Transparency)
+
+The “A” stands for alpha (opacity), which ranges from 0 (transparent) to 1 (fully visible).</p>
+
+<textarea>
+    div {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+</textarea>
+
+<p>This creates a semi-transparent red background.</p>
+
+
+
+
+
+
+</body>
+</html>
