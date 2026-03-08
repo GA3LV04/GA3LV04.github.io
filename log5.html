@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<!-- meta tags and title -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Images</title>
+
+	<!-- external and internal CSS -->
+	<link rel="stylesheet" href="styles.css" media="all">
+	<style>
+		
+        textarea {
+            border:none;
+            padding: 5px;
+            background-color: lightgray
+        }
+            
+	</style>
+
+</head>
+<body>
+
+	<h1>Using Images in HTML and CSS</h1>
+
+<p>Images are an important part of web design because they help make a page more visually engaging and can communicate information quickly. In web development, images can be added either directly in HTML using the <img> tag or through CSS using the background-image property. Each method has different purposes and affects how the image behaves on the page.</p>
+
+    <h1>HTML <img> Tag vs. CSS background-image</h1>
+
+The <img> tag is used in HTML when the image is part of the actual content of the webpage. For example, photos, diagrams, logos, or illustrations that the user should see as part of the information on the page are usually inserted using <img>. The code is simple and includes attributes like src for the image file and alt for accessibility.
+
+<p>Example:</p>
+
+    <textarea cols="50" rows="3">
+<img src="mountain.jpg" alt="Snowy mountain landscape" width="400">
+    </textarea>
+    
+
+<p> Using <img> allows the image to be treated like other elements in the layout. It can be resized, aligned, and read by screen readers, which helps with accessibility and search engines.</p>
+
+<p>On the other hand, background-image is used in CSS when the image is mainly decorative or part of the design of an element, such as a banner, hero section, or textured background. Instead of placing the image directly in the HTML, it is applied to an element like a <div>.</p>
+
+<p>Example:</p>
+
+    <textarea cols="50" rows="3">
+.hero {
+  background-image: url("mountain.jpg");
+}
+    </textarea>
+
+<p>Unlike <img>, background images cannot have alternative text for accessibility and are not considered part of the page’s main content. They are mainly used for visual styling. They also behave differently in layout because they sit behind the content inside the element rather than acting as a standalone element.</p>
+
+
+    <h2>CSS Properties That Affect Background Images</h2>
+
+<P>Besides background-image, there are several CSS properties that control how a background image appears.
+
+background-size
+This property controls how large the background image appears inside the element. For example, cover makes the image fill the entire area, while contain makes sure the whole image fits inside the container.</P>
+
+<p>Example:</p>
+
+    <textarea cols="50" rows="3">
+background-size: cover;
+    </textarea>
+
+<p>background-repeat:
+This property determines whether the image repeats. By default, background images repeat both horizontally and vertically.</p>
+
+<p>Example:</p>
+
+<textarea cols="50" rows="3">
+background-repeat: no-repeat;
+    </textarea>
+
+<p>background-position
+This property controls where the image is placed within the element.</p>
+
+<p>Example:</p>
+
+<textarea cols="50" rows="3">
+background-position: center;
+    </textarea>
+
+    <p>These properties help designers control how background images scale, repeat, and align within different layouts.</p>
+
+    <hr>
+
+<h1>Dimensions vs. Resolution</h1>
+
+<p>Dimension refer to the physical size of an image, while resolutions refers to the desnity of pixels in an image.</p>
+
+    <hr>
+
+<h1>Image File Formats</h1>
+
+<p>There are several common image file formats used on the web, and each has advantages depending on how the image will be used.</p>
+
+<p>GIF files support simple animations and limited transparency, but they only support 256 colors, which makes them less suitable for detailed photos.</p>
+
+<p>PNG images support full transparency and high-quality graphics, which makes them ideal for logos, icons, and images that need clear edges. However, the file sizes can be larger. Me personally as a graphic designer I always save every image that I utalize as a PNG.<p>
+
+<p>JPEG files are best for photographs because they compress images well and keep file sizes smaller. However, they use lossy compression, meaning some image quality is lost when the file is compressed. Which is why I typically steer away from saving things as JPEG in the design field.</p>
+
+<p>WebP is a modern format designed for the web. It supports both transparency and compression, which often results in smaller file sizes than PNG or JPEG while maintaining good quality.</p>
+
+<p>SVG files are vector-based instead of bitmap images. This means they can scale to any size without losing quality. They are commonly used for logos, icons, and illustrations on websites.</p>
+
+<p>Overall, I find JPG best for photos, however if you are looking for images with best graphics and transparancy PNG is your way to go. And SVG is best for scalable graphics, GIF is mostly used for simple animations, and WebP is becoming popular because it offers efficient compression and good quality for web use.</p>
+
+</body>
+</html>
