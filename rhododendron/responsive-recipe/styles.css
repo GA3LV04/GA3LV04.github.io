@@ -1,0 +1,62 @@
+body{
+font-family: Arial, sans-serif;
+padding:20px;
+margin:0;
+}
+
+.recipe{
+max-width:900px;
+margin:auto;
+}
+
+h1{
+text-align:center;
+}
+
+.info{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px;
+margin:20px 0;
+border-top:2px solid black;
+border-bottom:2px solid black;
+padding:10px 0;
+}
+
+.content{
+display:block;
+}
+
+.image{
+height:200px;
+border:2px solid black;
+margin-bottom:20px;
+}
+
+.ingredients, .directions{
+margin-bottom:20px;
+}
+
+/* Desktop layout */
+@media (min-width: 768px){
+
+.content{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+gap:20px;
+}
+
+.image{
+grid-column:1;
+height:300px;
+}
+
+.ingredients{
+grid-column:2;
+}
+
+.directions{
+grid-column:3;
+}
+
+}
