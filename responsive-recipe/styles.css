@@ -1,8 +1,3 @@
-.ingredients, .directions{
-border-top:2px solid black;
-padding-top:10px;
-}
-
 body{
 font-family: Arial, sans-serif;
 padding:20px;
@@ -38,8 +33,17 @@ border:2px solid black;
 margin-bottom:20px;
 }
 
+/* spacing for sections */
 .ingredients, .directions{
 margin-bottom:20px;
+}
+
+/* line under section titles */
+.ingredients h2,
+.directions h2{
+border-bottom:2px solid black;
+padding-bottom:5px;
+margin-bottom:10px;
 }
 
 /* Desktop layout */
