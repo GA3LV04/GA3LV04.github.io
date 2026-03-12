@@ -1,18 +1,27 @@
 body{
-font-family: Arial, sans-serif;
+font-family: Georgia, "Times New Roman", serif;
 padding:20px;
 margin:0;
+background-color:#f8f3eb;
+color:#3b2a21;
 }
 
 .recipe{
 max-width:900px;
 margin:auto;
-border:4px solid black;
+border:4px solid #8b4513;
 padding:20px;
+background-color:white;
+border-radius:16px;
+box-shadow:0 4px 12px rgba(0,0,0,0.15);
 }
 
 h1{
 text-align:center;
+font-size:2.5rem;
+margin-bottom:10px;
+letter-spacing:1px;
+color:#8b4513;
 }
 
 .info{
@@ -20,9 +29,10 @@ display:grid;
 grid-template-columns:1fr 1fr;
 gap:10px;
 margin:20px 0;
-border-top:2px solid black;
-border-bottom:2px solid black;
+border-top:2px solid #c58b57;
+border-bottom:2px solid #c58b57;
 padding:10px 0;
+color:#5a3d2b;
 }
 
 .content{
@@ -30,13 +40,13 @@ display:block;
 }
 
 .image{
-height:200px;
-border:2px solid black;
+height:250px;
+border:2px solid #8b4513;
 margin-bottom:20px;
 overflow:hidden;
+border-radius:12px;
 }
 
-/* makes the image fill the box */
 .image img{
 width:100%;
 height:100%;
@@ -44,17 +54,22 @@ object-fit:cover;
 display:block;
 }
 
-/* spacing for sections */
 .ingredients, .directions{
 margin-bottom:20px;
 }
 
-/* line under section titles */
 .ingredients h2,
 .directions h2{
-border-bottom:2px solid black;
+border-bottom:2px solid #c58b57;
 padding-bottom:5px;
 margin-bottom:10px;
+color:#8b4513;
+}
+
+.ingredients li,
+.directions li{
+margin-bottom:8px;
+line-height:1.5;
 }
 
 /* Desktop layout */
@@ -64,6 +79,7 @@ margin-bottom:10px;
 display:grid;
 grid-template-columns:1fr 1fr 1fr;
 gap:20px;
+align-items:start;
 }
 
 .image{
