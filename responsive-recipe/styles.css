@@ -7,8 +7,6 @@ margin:0;
 .recipe{
 max-width:900px;
 margin:auto;
-border:4px solid black;
-padding:20px;
 }
 
 h1{
@@ -33,28 +31,6 @@ display:block;
 height:200px;
 border:2px solid black;
 margin-bottom:20px;
-position:relative;
-}
-
-/* X inside image box */
-.image::before,
-.image::after{
-content:"";
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-border-top:2px solid black;
-transform-origin:center;
-}
-
-.image::before{
-transform:rotate(45deg);
-}
-
-.image::after{
-transform:rotate(-45deg);
 }
 
 /* spacing for sections */
