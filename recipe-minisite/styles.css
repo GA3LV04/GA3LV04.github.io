@@ -1,3 +1,4 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -31,13 +32,13 @@ body {
     margin-bottom: 0.5rem;
 }
 
-/* hide menu (mobile default) */
+/* hide menu on mobile by default */
 .main-nav ul {
     list-style: none;
     display: none;
 }
 
-/* show menu when clicked */
+/* show menu when burger is clicked */
 .main-nav.clicked ul {
     display: block;
 }
@@ -53,7 +54,7 @@ body {
     font-weight: 500;
 }
 
-/* dropdown hidden */
+/* dropdown hidden by default */
 .main-nav ul ul {
     display: none;
     margin-top: 0.5rem;
@@ -61,7 +62,7 @@ body {
     padding: 0.5rem 0;
 }
 
-/* dropdown shown */
+/* dropdown shown when clicked */
 .main-nav li.clicked ul {
     display: block;
 }
@@ -72,18 +73,27 @@ body {
 
 .homepage {
     min-height: 100vh;
-    background-image: url("https://th.bing.com/th/id/OIP.fCTmWdzNmvlgO5gYZGCsugHaEK?w=278&h=180&c=7&r=0&o=7&dpr=2&pid=1.7&rm=3");
-    background-size: cover;
-    background-position: center;
     position: relative;
+    overflow: hidden;
 }
 
-/* DARK OVERLAY */
 .homepage::before {
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-image: url("https://th.bing.com/th/id/OIP.fCTmWdzNmvlgO5gYZGCsugHaEK?w=278&h=180&c=7&r=0&o=7&dpr=2&pid=1.7&rm=3");
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    transform: scale(1.08);
+    z-index: 0;
+}
+
+.homepage::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.28);
     z-index: 0;
 }
 
@@ -99,16 +109,12 @@ body {
     padding: 2.5rem 2rem;
     text-align: center;
     color: white;
-
-    /* glass effect */
     background: rgba(255, 248, 240, 0.18);
     border: 1px solid rgba(255, 255, 255, 0.35);
     border-radius: 20px;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
-
     animation: fadeUp 1s ease;
 }
 
@@ -138,7 +144,7 @@ body {
 }
 
 /* ===================== */
-/* RECIPE PAGE */
+/* MAIN / RECIPE PAGE */
 /* ===================== */
 
 main {
@@ -166,7 +172,6 @@ main {
     margin-bottom: 1.5rem;
 }
 
-/* info box */
 .info {
     display: grid;
     gap: 0.75rem;
@@ -182,7 +187,6 @@ main {
     gap: 2rem;
 }
 
-/* image styling */
 .image img {
     width: 100%;
     max-width: 450px;
@@ -191,7 +195,6 @@ main {
     border-radius: 14px;
 }
 
-/* ingredients + directions */
 .ingredients,
 .directions {
     background-color: #fdf8f3;
@@ -232,13 +235,10 @@ footer {
 /* ===================== */
 
 @media (min-width: 700px) {
-
-    /* hide burger */
     #navBurger {
         display: none;
     }
 
-    /* horizontal nav */
     .main-nav > ul {
         display: flex;
         gap: 2rem;
@@ -249,7 +249,6 @@ footer {
         margin-bottom: 0;
     }
 
-    /* dropdown styling */
     .main-nav ul ul {
         position: absolute;
         top: 100%;
@@ -259,9 +258,9 @@ footer {
         padding: 0.75rem;
         border-radius: 10px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        margin-left: 0;
     }
 
-    /* recipe layout */
     .content {
         grid-template-columns: 1fr 1fr;
     }
