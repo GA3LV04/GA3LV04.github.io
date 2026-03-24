@@ -1,30 +1,63 @@
-body {
+/* RESET */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
     font-family: 'Outfit', sans-serif;
     background-color: #f7f1e8;
     color: #4b3f35;
 }
 
+/* NAV BAR */
 .main-nav {
     background-color: #e7d7c9;
     padding: 1rem;
 }
 
-.main-nav ul {
+/* Top-level menu */
+.main-nav > ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    display: flex;
+    gap: 2rem;
 }
 
+/* Links */
 .main-nav a {
     text-decoration: none;
     color: #4b3f35;
     font-weight: 500;
 }
 
+/* DROPDOWN (hidden by default) */
+.main-nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #e7d7c9;
+    padding: 0.5rem;
+}
+
+/* Show dropdown when clicked (JS adds .clicked) */
+.main-nav li.clicked ul {
+    display: block;
+}
+
+/* Burger behavior (mobile) */
+.main-nav ul {
+    display: none;
+}
+
+.main-nav.clicked ul {
+    display: block;
+}
+
+/* HERO SECTION */
 .hero {
     text-align: center;
-    padding: 4rem 1.5rem 2rem;
+    padding: 4rem 1.5rem;
 }
 
 .hero h1 {
@@ -37,36 +70,7 @@ body {
     font-size: 1.1rem;
 }
 
-.recipe-cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    padding: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.card {
-    background-color: #fffaf5;
-    border: 1px solid #d8c3b1;
-    border-radius: 14px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
-    text-align: center;
-}
-
-.card h2 {
-    font-family: 'Playfair Display', serif;
-    margin-top: 0;
-}
-
-.card a {
-    display: inline-block;
-    margin-top: 1rem;
-    color: #8b5e3c;
-    font-weight: 600;
-}
-
+/* FOOTER */
 footer {
     text-align: center;
     padding: 1rem;
@@ -74,8 +78,13 @@ footer {
     margin-top: 2rem;
 }
 
+/* DESKTOP FIX */
 @media (min-width: 700px) {
-    .recipe-cards {
-        grid-template-columns: repeat(3, 1fr);
+    .main-nav ul {
+        display: flex;
+    }
+
+    #navBurger {
+        display: none;
     }
 }
