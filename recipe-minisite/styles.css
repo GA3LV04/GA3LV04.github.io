@@ -1,11 +1,9 @@
-/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* BODY */
 body {
     font-family: 'Outfit', sans-serif;
     background-color: #f7f1e8;
@@ -13,9 +11,6 @@ body {
     line-height: 1.6;
 }
 
-/* ===================== */
-/* NAVIGATION */
-/* ===================== */
 
 .main-nav {
     background-color: #e7d7c9;
@@ -28,18 +23,17 @@ body {
     cursor: pointer;
     display: inline-block;
     color: #4b3f35;
-    text-decoration: none;
+    background: none;
+    border: none;
     margin-bottom: 0.5rem;
 }
 
-/* hide menu on mobile by default */
 .main-nav ul {
     list-style: none;
     display: none;
 }
 
-/* show menu when burger is clicked */
-.main-nav.clicked ul {
+.main-nav.clicked > ul {
     display: block;
 }
 
@@ -48,13 +42,19 @@ body {
     position: relative;
 }
 
-.main-nav a {
+.main-nav a,
+.dropdown-btn {
     text-decoration: none;
     color: #4b3f35;
     font-weight: 500;
+    font-size: 1rem;
+    font-family: 'Outfit', sans-serif;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
 }
 
-/* dropdown hidden by default */
 .main-nav ul ul {
     display: none;
     margin-top: 0.5rem;
@@ -62,14 +62,10 @@ body {
     padding: 0.5rem 0;
 }
 
-/* dropdown shown when clicked */
-.main-nav li.clicked ul {
+.main-nav li.clicked > ul {
     display: block;
 }
 
-/* ===================== */
-/* HOMEPAGE BACKGROUND */
-/* ===================== */
 
 .homepage {
     min-height: 100vh;
@@ -97,9 +93,6 @@ body {
     z-index: 0;
 }
 
-/* ===================== */
-/* HERO (GLASS EFFECT) */
-/* ===================== */
 
 .hero {
     position: relative;
@@ -131,7 +124,6 @@ body {
     margin: 0 auto;
 }
 
-/* ANIMATION */
 @keyframes fadeUp {
     from {
         opacity: 0;
@@ -143,9 +135,6 @@ body {
     }
 }
 
-/* ===================== */
-/* MAIN / RECIPE PAGE */
-/* ===================== */
 
 main {
     padding: 2rem 1rem;
@@ -219,9 +208,6 @@ main {
     margin-bottom: 0.6rem;
 }
 
-/* ===================== */
-/* FOOTER */
-/* ===================== */
 
 footer {
     text-align: center;
@@ -230,9 +216,6 @@ footer {
     margin-top: 2rem;
 }
 
-/* ===================== */
-/* DESKTOP */
-/* ===================== */
 
 @media (min-width: 700px) {
     #navBurger {

@@ -8,7 +8,6 @@
 
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 
     <script src="scripts.js" defer></script>
@@ -16,14 +15,14 @@
 
 <body>
 
-    <!-- NAV -->
     <nav class="main-nav">
-        <a id="navBurger">&#9776;</a>
+        <button id="navBurger" type="button">&#9776;</button>
 
         <ul>
             <li><a href="index.html">Home</a></li>
 
-            <li><a href="#">My Favorite Recipes</a>
+            <li class="has-submenu">
+                <button type="button" class="dropdown-btn">My Favorite Recipes</button>
                 <ul>
                     <li><a href="recipe1.html">Gingerbread Cookies</a></li>
                     <li><a href="recipe2.html">Banana Muffins</a></li>
@@ -31,33 +30,28 @@
                 </ul>
             </li>
 
-<li><a href="#">My Favorite Recipe Websites</a>
-    <ul>
-        <li><a href="https://www.babi.sh/" target="_blank">Babish Culinary Universe</a></li>
-        <li><a href="https://www.allrecipes.com/" target="_blank">AllRecipes</a></li>
-        <li><a href="https://sallysbakingaddiction.com/" target="_blank">Sally’s Baking Addiction</a></li>
-    </ul>
-</li>
+            <li class="has-submenu">
+                <button type="button" class="dropdown-btn">My Favorite Recipe Websites</button>
+                <ul>
+                    <li><a href="https://www.babi.sh/" target="_blank">Babish Culinary Universe</a></li>
+                    <li><a href="https://www.allrecipes.com/" target="_blank">AllRecipes</a></li>
+                    <li><a href="https://sallysbakingaddiction.com/" target="_blank">Sally’s Baking Addiction</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
 
-    <!-- MAIN -->
     <main class="homepage">
-
         <header class="hero">
-            <h1>Hello and Welcome to my Page!🍪</h1>
+            <h1>Hello and Welcome to my Page! 🍪</h1>
             <p>
                 A small collection of my favorite homemade recipes.
                 Use the menu above to explore each one.
             </p>
         </header>
-
     </main>
 
-    <!-- FOOTER -->
-    <footer>
-
-    </footer>
+    <footer></footer>
 
 </body>
 

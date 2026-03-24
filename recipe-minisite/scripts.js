@@ -1,56 +1,41 @@
-function clickNav(bodyClicked) {
-    let navHandle = document.querySelector("nav");
-    let burgerWasClicked = navHandle.classList.contains("clicked");
-
-    if (!bodyClicked) {
-        navHandle.classList.toggle("clicked");
-    } else {
-        navHandle.classList.remove("clicked");
-    }
-
-    if (burgerWasClicked || bodyClicked) {
-        let allMenus = document.querySelectorAll("nav > ul > li");
-        for (const eachMenu of allMenus) {
-            eachMenu.classList.remove("clicked");
-        }
-    }
+function closeAllDropdowns() {
+    const allMenus = document.querySelectorAll(".main-nav > ul > li");
+    allMenus.forEach(menu => menu.classList.remove("clicked"));
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    document.querySelector("#navBurger").addEventListener("click", function (e) {
-        e.preventDefault();
+    const nav = document.querySelector(".main-nav");
+    const burger = document.querySelector("#navBurger");
+    const dropdownButtons = document.querySelectorAll(".dropdown-btn");
+
+    burger.addEventListener("click", function (e) {
         e.stopPropagation();
-        clickNav(false);
+        nav.classList.toggle("clicked");
+
+        if (!nav.classList.contains("clicked")) {
+            closeAllDropdowns();
+        }
     });
 
-    let allMenus = document.querySelectorAll("nav > ul > li");
-
-    for (const eachMenu of allMenus) {
-        eachMenu.addEventListener("click", function (e) {
-            let topLink = eachMenu.querySelector(":scope > a");
-            let hasSubmenu = eachMenu.querySelector(":scope > ul");
-
-            if (hasSubmenu && topLink.getAttribute("href") === "#") {
-                e.preventDefault();
-            }
-
+    dropdownButtons.forEach(button => {
+        button.addEventListener("click", function (e) {
             e.stopPropagation();
 
-            let wasClicked = eachMenu.classList.contains("clicked");
+            const parentLi = button.parentElement;
+            const wasClicked = parentLi.classList.contains("clicked");
 
-            for (const eachMenu2 of allMenus) {
-                eachMenu2.classList.remove("clicked");
-            }
+            closeAllDropdowns();
 
             if (!wasClicked) {
-                eachMenu.classList.add("clicked");
+                parentLi.classList.add("clicked");
             }
         });
-    }
+    });
 
-    document.documentElement.addEventListener("click", function (e) {
-        if (!e.target.closest("nav")) {
-            clickNav(true);
+    document.addEventListener("click", function (e) {
+        if (!e.target.closest(".main-nav")) {
+            nav.classList.remove("clicked");
+            closeAllDropdowns();
         }
     });
 });
