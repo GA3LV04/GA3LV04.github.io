@@ -1,62 +1,73 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Minisite</title>
 
-	<!-- meta tags and title -->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Responsive Menu Demo</title>
+    <link rel="stylesheet" href="styles.css" media="all">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 
-	<!-- external and internal CSS -->
-	<link rel="stylesheet" href="styles.css" media="all">
-
-	<!-- external and internal JavaScript -->
-	<!-- file renamed to "scripts.js" (plural) after the demo -->
-	<script src="scripts.js" defer></script>
-
+    <script src="scripts.js" defer></script>
 </head>
 
-<body>
+<body id="main">
 
-	<nav>
-		<a id="navBurger">&#9776;</a>
+    <nav class="main-nav">
+        <a id="navBurger">&#9776;</a>
 
-		<ul>
-			<li><a href="#">My Favorite News Sites</a>
-				<ul>
-					<li><a href="https://arstechnica.com">Ars Technica</a></li>
-					<li><a href="#">Submenu One B</a></li>
-					<li><a href="#">Submenu One C</a></li>
-				</ul>
-			</li>
+        <ul>
+            <li><a href="index.html">Home</a></li>
 
-			<li><a href="#">Menu Item Two</a>
-				<ul>
-					<li><a href="#">Submenu Two A</a></li>
-					<li><a href="#">Submenu Two B</a></li>
-					<li><a href="#">Submenu Two C</a></li>
-					<li><a href="#">Submenu Two D</a></li>
-					<li><a href="#">Submenu Two E</a></li>
-				</ul>
-			</li>
+            <li><a href="#">My Favorite Recipes</a>
+                <ul>
+                    <li><a href="recipe1.html">Gingerbread Cookies</a></li>
+                    <li><a href="recipe2.html">Banana Bread Muffins</a></li>
+                    <li><a href="recipe3.html">Chocolate Chip Cookies</a></li>
+                </ul>
+            </li>
 
-			<li><a href="#">Menu Item Three</a>
-				<ul>
-					<li><a href="#">Submenu Three A</a></li>
-					<li><a href="#">Submenu Three B</a></li>
-				</ul>
-			</li>
+            <li><a href="#">My Favorite Recipe Websites</a>
+                <ul>
+                    <li><a href="https://www.babi.sh/">The Babish Culinary Universe</a></li>
+                    <li><a href="https://www.foodnetwork.com/">Food Network</a></li>
+                    <li><a href="https://www.simplyrecipes.com/">Simply Recipes</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 
-		</ul>
+    <main class="homepage">
+        <header class="hero">
+            <h1 id="home">Welcome to My Cozy Table</h1>
+            <p>A warm little collection of my favorite homemade recipes.</p>
+        </header>
 
-	</nav>
+        <section class="recipe-cards">
+            <article class="card">
+                <h2>Gingerbread Cookies</h2>
+                <p>Soft, spiced cookies with a cozy homemade flavor.</p>
+                <a href="recipe1.html">View Recipe →</a>
+            </article>
 
-	<main>
-		<h1>Some content goes here</h1>
-		<p>Eventually this will be something useful.</p>
-	</main>
+            <article class="card">
+                <h2>Banana Bread Muffins</h2>
+                <p>Moist banana muffins with a soft texture and sweet flavor.</p>
+                <a href="recipe2.html">View Recipe →</a>
+            </article>
+
+            <article class="card">
+                <h2>Chocolate Chip Cookies</h2>
+                <p>A classic favorite with gooey chocolate chips in every bite.</p>
+                <a href="recipe3.html">View Recipe →</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Marie Wilander.</p>
+    </footer>
 
 </body>
 
