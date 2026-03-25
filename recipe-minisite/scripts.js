@@ -27,30 +27,28 @@ document.addEventListener("DOMContentLoaded", function () {
     let allMenus = document.querySelectorAll("nav > ul > li");
 
     for (const eachMenu of allMenus) {
-        eachMenu.addEventListener("click", function (e) {
-            e.stopPropagation();
+        let topLink = eachMenu.querySelector(":scope > a");
+        let submenu = eachMenu.querySelector(":scope > ul");
 
-            let topLink = eachMenu.querySelector(":scope > a");
-            let submenu = eachMenu.querySelector(":scope > ul");
-
-            if (topLink && topLink.getAttribute("href") === "#" && submenu) {
+        if (topLink && submenu) {
+            topLink.addEventListener("click", function (e) {
                 e.preventDefault();
-            }
+                e.stopPropagation();
 
-            let wasClicked = eachMenu.classList.contains("clicked");
+                let wasClicked = eachMenu.classList.contains("clicked");
 
-            for (const eachMenu2 of allMenus) {
-                eachMenu2.classList.remove("clicked");
-            }
+                for (const eachMenu2 of allMenus) {
+                    eachMenu2.classList.remove("clicked");
+                }
 
-            if (!wasClicked) {
-                eachMenu.classList.add("clicked");
-            }
-        });
+                if (!wasClicked) {
+                    eachMenu.classList.add("clicked");
+                }
+            });
+        }
     }
 
     document.querySelector("html").addEventListener("click", function () {
         clickNav(true);
     });
-
 });
