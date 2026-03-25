@@ -1,11 +1,9 @@
-/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* BODY */
 body {
     font-family: 'Outfit', sans-serif;
     background-color: #f7f1e8;
@@ -13,9 +11,6 @@ body {
     line-height: 1.6;
 }
 
-/* ===================== */
-/* NAVIGATION */
-/* ===================== */
 
 .main-nav {
     background-color: #e7d7c9;
@@ -32,13 +27,11 @@ body {
     margin-bottom: 0.5rem;
 }
 
-/* mobile menu hidden by default */
 .main-nav > ul {
     list-style: none;
     display: none;
 }
 
-/* show main menu when burger clicked */
 .main-nav.clicked > ul {
     display: block;
 }
@@ -55,7 +48,6 @@ body {
     display: block;
 }
 
-/* dropdown hidden by default */
 .main-nav ul ul {
     display: none;
     margin-top: 0.5rem;
@@ -63,14 +55,10 @@ body {
     padding: 0.5rem 0;
 }
 
-/* show dropdown when li gets clicked class */
 .main-nav li.clicked > ul {
     display: block;
 }
 
-/* ===================== */
-/* HOMEPAGE BACKGROUND */
-/* ===================== */
 
 .homepage {
     min-height: 100vh;
@@ -98,9 +86,6 @@ body {
     z-index: 0;
 }
 
-/* ===================== */
-/* HERO */
-/* ===================== */
 
 .hero {
     position: relative;
@@ -132,7 +117,6 @@ body {
     margin: 0 auto;
 }
 
-/* ANIMATION */
 @keyframes fadeUp {
     from {
         opacity: 0;
@@ -144,9 +128,6 @@ body {
     }
 }
 
-/* ===================== */
-/* MAIN / RECIPE PAGE */
-/* ===================== */
 
 main {
     padding: 2rem 1rem;
@@ -220,9 +201,6 @@ main {
     margin-bottom: 0.6rem;
 }
 
-/* ===================== */
-/* FOOTER */
-/* ===================== */
 
 footer {
     text-align: center;
@@ -231,9 +209,6 @@ footer {
     margin-top: 2rem;
 }
 
-/* ===================== */
-/* DESKTOP */
-/* ===================== */
 
 @media (min-width: 700px) {
     #navBurger {
