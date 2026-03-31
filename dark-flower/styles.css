@@ -42,7 +42,6 @@ header {
     font-family: 'Playfair Display', serif;
 }
 
-/* dark mode button */
 #toggleDarkMode {
     position: absolute;
     top: 20px;
@@ -88,7 +87,6 @@ main section + section::before {
     font-size: 1.2rem;
 }
 
-/* landscape layout */
 @media screen and (orientation: landscape) {
     #rhodiePicture {
         width: 50vw;
@@ -106,7 +104,6 @@ main section + section::before {
     }
 }
 
-/* larger screen responsive grid */
 @media screen and (min-width: 900px) {
     main {
         display: grid;
