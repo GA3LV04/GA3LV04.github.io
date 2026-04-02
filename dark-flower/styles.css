@@ -122,7 +122,6 @@ main section + section::before {
     }
 }
 
-/* DARK MODE */
 body.darkMode {
     background-color: #121212;
     color: #f5f5f5;
