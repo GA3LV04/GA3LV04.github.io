@@ -4,7 +4,6 @@ body {
   margin: 0;
 }
 
-/* NAVBAR */
 header {
   border-bottom: 2px solid black;
   padding: 20px;
@@ -16,19 +15,16 @@ nav a {
   color: black;
 }
 
-/* SECTIONS */
 section {
   border: 2px solid black;
   margin: 20px;
   padding: 20px;
 }
 
-/* HERO */
 section h2 {
   font-size: 40px;
 }
 
-/* CARDS */
 .cards {
   display: flex;
 }
@@ -40,7 +36,10 @@ section h2 {
   flex: 1;
 }
 
-/* INFO SECTION */
+section .card {
+  margin: 15px 0;
+}
+
 .info {
   display: flex;
 }
@@ -55,7 +54,6 @@ section h2 {
   justify-content: center;
 }
 
-/* FOOTER */
 footer {
   border-top: 2px solid black;
   padding: 20px;
