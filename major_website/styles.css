@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #eee;
+  margin: 0;
+}
+
+/* NAVBAR */
+header {
+  border-bottom: 2px solid black;
+  padding: 20px;
+}
+
+nav a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+/* SECTIONS */
+section {
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+
+/* HERO */
+section h2 {
+  font-size: 40px;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+}
+
+.card {
+  border: 2px solid black;
+  padding: 20px;
+  margin: 10px;
+  flex: 1;
+}
+
+/* INFO SECTION */
+.info {
+  display: flex;
+}
+
+.image-box {
+  border: 2px solid black;
+  width: 300px;
+  height: 200px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* FOOTER */
+footer {
+  border-top: 2px solid black;
+  padding: 20px;
+  margin: 20px;
+}
