@@ -4,58 +4,92 @@ body {
   margin: 0;
 }
 
-header {
-  border-bottom: 2px solid black;
+.navbar {
+  display: flex;
+  justify-content: space-between;
   padding: 20px;
+  border-bottom: 2px solid black;
 }
 
 nav a {
-  margin-right: 10px;
+  margin-left: 15px;
   text-decoration: none;
   color: black;
 }
 
-section {
-  border: 2px solid black;
-  margin: 20px;
-  padding: 20px;
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  border-bottom: 2px solid black;
 }
 
-section h2 {
-  font-size: 40px;
+.hero h2 {
+  font-size: 50px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.button {
+  padding: 10px 20px;
+  border: 2px solid black;
+  background: white;
 }
 
 .cards {
   display: flex;
+  gap: 15px;
+  padding: 30px;
 }
 
 .card {
   border: 2px solid black;
   padding: 20px;
-  margin: 10px;
   flex: 1;
 }
 
-section .card {
-  margin: 15px 0;
+.card a {
+  display: inline-block;
+  margin-top: 10px;
 }
 
 .info {
   display: flex;
+  gap: 20px;
+  padding: 30px;
 }
 
 .image-box {
   border: 2px solid black;
   width: 300px;
   height: 200px;
-  margin-right: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.info-text {
+  max-width: 600px;
+}
+
 footer {
   border-top: 2px solid black;
   padding: 20px;
-  margin: 20px;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .cards {
+    flex-direction: column;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .hero h2 {
+    font-size: 36px;
+  }
 }
